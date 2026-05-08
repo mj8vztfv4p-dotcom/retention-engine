@@ -325,7 +325,7 @@ setNewTopic({
   name: '', 
   note: '', 
   subject: 'Polity', 
-  type: 'Prelims' as 'Prelims' | 'Mains' | 'Both', 
+  type: 'Prelims',
   tags: []
 });
 
