@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { format, addDays, subDays, startOfDay, isToday, differenceInDays, parseISO } from 'date-fns';
 import { motion, AnimatePresence } from 'framer-motion';
-import confetti from 'canvas-confetti';
+// import confetti from 'canvas-confetti';
 import { toast } from 'sonner';
 import {
   PieChart, Pie, Cell, LineChart, Line, XAxis, YAxis, 
@@ -338,7 +338,7 @@ export default function RetentionEngine() {
     });
 
     if (topics.length === 0) {
-      confetti({
+      // confetti({
         particleCount: 150,
         spread: 70,
         origin: { y: 0.6 }
@@ -386,7 +386,7 @@ export default function RetentionEngine() {
     setTopics(prev => prev.map(t => t.id === currentTopic.id ? updatedTopic : t));
 
     if (quality >= 4) {
-      confetti({
+      // confetti({
         particleCount: 80,
         spread: 60,
         origin: { y: 0.7 }
