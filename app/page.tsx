@@ -1319,7 +1319,7 @@ setNewTopic({
                       {(['Prelims', 'Mains', 'Both'] as const).map(t => (
                         <button
                           key={t}
-                          onClick={() => setNewTopic({...newTopic, type: t})}
+                          onClick={() => setNewTopic({...newTopic, type: t as any})}
                           className={`flex-1 py-3.5 text-sm rounded-2xl border transition-all ${newTopic.type === t ? 'border-indigo-500 bg-indigo-500/10 text-white' : 'border-zinc-700 text-zinc-400'}`}
                         >
                           {t}
