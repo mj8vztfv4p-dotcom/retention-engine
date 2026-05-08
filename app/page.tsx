@@ -321,9 +321,13 @@ export default function RetentionEngine() {
     setTopics(prev => [topic, ...prev]);
     setShowAddModal(false);
     
-    setNewTopic({
-      name: '', note: '', subject: 'Polity', type: 'Prelims', tags: []
-    });
+setNewTopic({
+  name: '', 
+  note: '', 
+  subject: 'Polity', 
+  type: 'Prelims' as 'Prelims' | 'Mains' | 'Both', 
+  tags: []
+});
 
     toast.success("Topic added! First revision scheduled for today.", {
       description: "Tap 'Revise Now' in Today's Queue to start active recall.",
